@@ -1,12 +1,14 @@
-🧠 Create Chatbot Using Python (with NLP + Web Knowledge Base)
-This project demonstrates how to build a smart chatbot in Python that uses Natural Language Processing (NLP) and semantic similarity to answer user questions based on content scraped from a specific web article.
+# 🤖 Simple Intent-Based Chatbot Using TensorFlow
 
-It uses:
+This project implements a basic chatbot in Python using **TensorFlow**. It is built around **predefined intents** and **custom responses**, classified via a feedforward neural network.
 
-🧠 sentence-transformers for semantic understanding
+---
 
-🌐 requests + BeautifulSoup for web scraping
+## ⭐ Features
 
-🧠 nltk for sentence tokenization
-
-⚙️ PyTorch backend for model inference
+- ✅ **Intent classification** – Understands user messages based on intents defined in `intents.json`.
+- ✅ **Custom responses** – Provides appropriate replies for each recognized intent.
+- ✅ **Data-driven design** – Easily extendable by adding more intents or example phrases.
+- ✅ **Two-script flow**:
+  - `new.py` – Trains the model on intent-response pairs.
+  - `chatbot.py` – Loads the trained model and interacts with users.
